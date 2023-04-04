@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="style sheet" href="C:\Users\sanja\OneDrive\Desktop\tasks\public\login.css"> -->
     <title>Login Form</title>
+   <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <form onsubmit='localStorage.setItem("user", document.getElementById("user").value);' action="/message" method="POST">
+    
+    <header>
+        <navbaar class="item">
+            <ul>
+            <li class="sign-in"><a href="login.html">Sign-in</a></li>
+            <li class="home"><a href="home.html">home</a></li>
+            <li class="contact"><a href="contact.html">contact-us</a></li>
+            </ul>
+        </navbaar>
+    </header>
+    <main>
+    <form  class="login-form" onsubmit='localStorage.setItem("user", document.getElementById("user").value);' action="/message" method="POST">
         <label for="user">Username:</label>
         <input type="text" name="user" id="user">
         <button type="submit">LOGIN</button>
       </form>
+      </main>
 </body>
 </html>
